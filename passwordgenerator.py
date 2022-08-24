@@ -8,6 +8,7 @@ specials = "!()?%&/,.;:-_"
 pwLength = int(input("Password length: "))
 while pwLength <1 or pwLength > 20:
     print("Your password-length must be between 1 or 20 long")
+    pwLength = int(input("Password length: "))
 boolLowercase = input("Allow lowercase(y/n)? ")
 if boolLowercase == "y":
     passwordPool = passwordPool + lc
